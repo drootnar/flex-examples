@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Relative flex</title>
+	</head>
+	<style>
+.FlexContainer {
+	background: hsla(0,0%,0%,.1);
+	margin: 1em;
+	border: 1px solid black;
+	display: flex;
+}
+.FlexItem {
+	background: hsla(0,0%,0%,.1);
+	padding: 1em;
+	margin: 1em;
+	border: 1px solid black;
+}
+.ItemAuto {
+	flex: auto;
+}
+.ItemAbsolute {
+	flex: 1;
+}
+.Item1 {
+	flex: 1;
+}
+.Item2 {
+	flex: 2;
+}
+.Item3 {
+	flex: 3;
+}
+	</style>
+	<body>
+		<h2>Relative flex</h2>
+		<div class="FlexContainer">
+			<div class="FlexItem ItemAuto">Item 1</div>
+			<div class="FlexItem ItemAuto">Item 2 - this item is reaaaaaaaaaaaaaaaaly long</div>
+			<div class="FlexItem ItemAuto">Item 3</div>
+		</div>
+		<h2>Absolute flex</h2>
+		<div class="FlexContainer">
+			<div class="FlexItem ItemAbsolute">Item 1</div>
+			<div class="FlexItem ItemAbsolute">Item 2</div>
+			<div class="FlexItem ItemAbsolute">Item 3</div>
+		</div>
+		<h2>Absolute flex with proportion</h2>
+		<div class="FlexContainer">
+			<div class="FlexItem Item1">Item 1/6</div>
+			<div class="FlexItem Item2">Item 2/6</div>
+			<div class="FlexItem Item3">Item 3/6</div>
+		</div>
+	</body>
+</html>

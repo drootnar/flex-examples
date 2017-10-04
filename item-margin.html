@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>item margin</title>
+	</head>
+	<style>
+.FlexContainer {
+	background: hsla(0,0%,0%,.1);
+	margin: 1em;
+	border: 1px solid black;
+	display: flex;
+}
+.FlexItem {
+	background: hsla(0,0%,0%,.1);
+	padding: 1em;
+	margin: 1em;
+	border: 1px solid black;
+}
+.MarginLeftAuto {
+	margin-left: auto;
+	border: 1px red solid;
+}
+.MarginRightAuto {
+	margin-right: auto;
+	border: 1px red solid;
+}
+.MarginAuto {
+	margin: auto;
+	border: 1px red solid;
+}
+	</style>
+	<body>
+		<h2>margin-left: auto</h2>
+		<div class="FlexContainer">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem MarginLeftAuto">Item 2</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+		<h2>margin-right: auto</h2>
+		<div class="FlexContainer">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem MarginRightAuto">Item 2</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+		<h2>margin: auto</h2>
+		<div class="FlexContainer">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem MarginAuto">Item 2</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+	</body>
+</html>

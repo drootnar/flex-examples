@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>flex-wrap</title>
+	</head>
+	<style>
+.FlexContainer {
+	background: hsla(0,0%,0%,.1);
+	margin: 1em;
+	border: 1px solid black;
+	display: flex;
+}
+.FlexItem {
+	background: hsla(0,0%,0%,.1);
+	padding: 1em;
+	margin: 1em;
+	border: 1px solid black;
+}
+.FixedWidth {
+	width: 400px;
+}
+.Wrap {
+	flex-wrap: wrap;
+}
+.NoWrap {
+	flex-wrap: nowrap;
+}
+.WrapReverse {
+	flex-wrap: wrap-reverse;
+}
+	</style>
+	<body>
+		<h2>flex-wrap: wrap</h2>
+		<div class="FlexContainer FixedWidth Wrap">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem">Item 2</div>
+			<div class="FlexItem">Item 3</div>
+			<div class="FlexItem">Item 4</div>
+			<div class="FlexItem">Item 5</div>
+			<div class="FlexItem">Item 6</div>
+			<div class="FlexItem">Item 7</div>
+			<div class="FlexItem">Item 8</div>
+		</div>
+		<h2>flex-wrap: nowrap</h2>
+		<div class="FlexContainer FixedWidth NoWrap">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem">Item 2</div>
+			<div class="FlexItem">Item 3</div>
+			<div class="FlexItem">Item 4</div>
+			<div class="FlexItem">Item 5</div>
+			<div class="FlexItem">Item 6</div>
+			<div class="FlexItem">Item 7</div>
+			<div class="FlexItem">Item 8</div>
+		</div>
+		<h2>flex-wrap: wrap-reverse</h2>
+		<div class="FlexContainer FixedWidth WrapReverse">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem">Item 2</div>
+			<div class="FlexItem">Item 3</div>
+			<div class="FlexItem">Item 4</div>
+			<div class="FlexItem">Item 5</div>
+			<div class="FlexItem">Item 6</div>
+			<div class="FlexItem">Item 7</div>
+			<div class="FlexItem">Item 8</div>
+		</div>
+	</body>
+</html>

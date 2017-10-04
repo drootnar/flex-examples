@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>align-self</title>
+	</head>
+	<style>
+.FlexContainer {
+	background: hsla(0,0%,0%,.1);
+	margin: 1em;
+	border: 1px solid black;
+	display: flex;
+}
+.FlexItem {
+	background: hsla(0,0%,0%,.1);
+	padding: 1em;
+	margin: 1em;
+	border: 1px solid black;
+}
+.FixedHeight {
+	height: 200px;
+}
+.AlignItemsFlexStart {
+	align-items: flex-start;
+}
+.AlignItemsFlexEnd {
+	align-items: flex-end;
+}
+.AlignSelfFlexStart {
+	align-self: flex-start;
+	border: 1px red solid;
+}
+.AlignSelfFlexEnd {
+	align-self: flex-end;
+	border: 1px red solid;
+}
+.AlignSelfCenter {
+	align-self: center;
+	border: 1px red solid;
+}
+.AlignSelfBaseline {
+	align-self: baseline;
+	border: 1px red solid;
+}
+.AlignSelfStretch {
+	align-self: stretch;
+	border: 1px red solid;
+}
+.AlignSelfAuto {
+	align-self: auto;
+	border: 1px red solid;
+}
+	</style>
+	<body>
+		<h2>align-self: flex-start</h2>
+		<div class="FlexContainer FixedHeight AlignItemsFlexEnd">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem AlignSelfFlexStart">Item 2 (align-self: flex-start)</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+		<h2>align-self: flex-end</h2>
+		<div class="FlexContainer FixedHeight AlignItemsFlexStart">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem AlignSelfFlexEnd">Item 2 (align-self: flex-end)</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+		<h2>align-self: center</h2>
+		<div class="FlexContainer FixedHeight AlignItemsFlexStart">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem AlignSelfCenter">Item 2 (align-self: center)</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+		<h2>align-self: baseline</h2>
+		<div class="FlexContainer FixedHeight AlignItemsFlexStart">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem AlignSelfBaseline">Item 2 (align-self: baseline)</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+		<h2>align-self: stretch</h2>
+		<div class="FlexContainer FixedHeight AlignItemsFlexStart">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem AlignSelfStretch">Item 2 (align-self: stretch)</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+		<h2>align-self: auto</h2>
+		<div class="FlexContainer FixedHeight AlignItemsFlexStart">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem AlignSelfAuto">Item 2 (align-self: auto)</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+	</body>
+</html>

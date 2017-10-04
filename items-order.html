@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>order</title>
+	</head>
+	<style>
+.FlexContainer {
+	background: hsla(0,0%,0%,.1);
+	margin: 1em;
+	border: 1px solid black;
+	display: flex;
+}
+.FlexItem {
+	background: hsla(0,0%,0%,.1);
+	padding: 1em;
+	margin: 1em;
+	border: 1px solid black;
+}
+.Order1 {
+	order: 1;
+}
+.Order2 {
+	order: 2;
+}
+.Order3 {
+	order: 3;
+}
+	</style>
+	<body>
+		<h2>Order</h2>
+		<div class="FlexContainer">
+			<div class="FlexItem Order2">Item 1 (order 2)</div>
+			<div class="FlexItem Order3">Item 2 (order 3)</div>
+			<div class="FlexItem Order1">Item 3 (order 1)</div>
+		</div>
+		<div class="FlexContainer">
+			<div class="FlexItem Order2">Item 1 (order 2)</div>
+			<div class="FlexItem Order3">Item 2 (order 3)</div>
+			<div class="FlexItem Order1">Item 3 (order 1)</div>
+			<div class="FlexItem Order2">Item 4 (order 2)</div>
+		</div>
+	</body>
+</html>

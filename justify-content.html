@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>justify-content</title>
+	</head>
+	<style>
+.FlexContainer {
+	background: hsla(0,0%,0%,.1);
+	margin: 1em;
+	border: 1px solid black;
+	display: flex;
+}
+.FlexItem {
+	background: hsla(0,0%,0%,.1);
+	padding: 1em;
+	margin: 1em;
+	border: 1px solid black;
+}
+.JustifyContentFlexStart {
+	justify-content: flex-start;
+}
+.JustifyContentFlexEnd {
+	justify-content: flex-end;
+}
+.JustifyContentCenter {
+	justify-content: center;
+}
+.JustifyContentSpaceBetween {
+	justify-content: space-between;
+}
+.JustifyContentSpaceAround {
+	justify-content: space-around;
+}
+	</style>
+	<body>
+		<h2>justify-content: flex-start</h2>
+		<div class="FlexContainer JustifyContentFlexStart">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem">Item 2</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+		<h2>justify-content: flex-end</h2>
+		<div class="FlexContainer JustifyContentFlexEnd">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem">Item 2</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+		<h2>justify-content: center</h2>
+		<div class="FlexContainer JustifyContentCenter">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem">Item 2</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+		<h2>justify-content: space-between</h2>
+		<div class="FlexContainer JustifyContentSpaceBetween">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem">Item 2</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+		<h2>justify-content: space-around</h2>
+		<div class="FlexContainer JustifyContentSpaceAround">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem">Item 2</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+	</body>
+</html>

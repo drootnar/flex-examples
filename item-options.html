@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>flex items options</title>
+	</head>
+	<style>
+.FlexContainer {
+	background: hsla(0,0%,0%,.1);
+	margin: 1em;
+	border: 1px solid black;
+	display: flex;
+}
+.FlexItem {
+	background: hsla(0,0%,0%,.1);
+	padding: 1em;
+	margin: 1em;
+	border: 1px solid black;
+}
+.FixedWidth {
+	width: 400px;
+}
+.FlexGrow1 {
+	flex-grow: 1;
+}
+.FlexShrink1 {
+	flex-shrink: 1;
+}
+.FlexShrink0 {
+	flex-shrink: 0;
+}
+.FlexBasis300 {
+	flex-basis: 300px;
+}
+.FlexBasis30Percent {
+	flex-basis: 30%;
+}
+.FlexBasis30VW {
+	flex-basis: 30vw;
+}
+
+	</style>
+	<body>
+		<h2>flex-grow</h2>
+		<div class="FlexContainer">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem FlexGrow1">Item 2 (with flex-grow)</div>
+			<div class="FlexItem">Item 3</div>
+			<div class="FlexItem FlexGrow1">Item 4 (with flex-grow)</div>
+		</div>
+		<h2>flex-shrink</h2>
+		<div class="FlexContainer FixedWidth">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem FlexShrink1">Item 2 (with flex-shrink on)</div>
+			<div class="FlexItem">Item 3</div>
+			<div class="FlexItem FlexShrink1">Item 4 (with flex-shrink on)</div>
+		</div>
+		<div class="FlexContainer FixedWidth">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem FlexShrink0">Item 2 (with flex-shrink off)</div>
+			<div class="FlexItem">Item 3</div>
+			<div class="FlexItem FlexShrink0">Item 4 (with flex-shrink off)</div>
+		</div>
+		<h2>flex-basis</h2>
+		<div class="FlexContainer">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem FlexBasis300">Item 2 (with flex-basis: 300px;)</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+		<div class="FlexContainer">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem FlexBasis30Percent">Item 2 (with flex-basis: 30%;)</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+		<div class="FlexContainer">
+			<div class="FlexItem">Item 1</div>
+			<div class="FlexItem FlexBasis30VW">Item 2 (with flex-basis: 30vw;)</div>
+			<div class="FlexItem">Item 3</div>
+		</div>
+	</body>
+</html>
